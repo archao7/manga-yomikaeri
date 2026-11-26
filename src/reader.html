@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light"><title>日语漫画点读助手 · 车站问路</title>
+<style>
+${reader_css}</style></head><body>
+<header><div><h1>日语漫画点读助手</h1><nav aria-label="视图选择"><button id="read-tab" aria-current="page">点读样章</button><button id="review-tab">复习本 <small id="count">0</small></button></nav></div></header>
+<main>
+<section id="reader"><div class="intro"><h2 id="scene">车站问路</h2><p class="sub" id="hint">点选画中的对白，先猜句意，再对照释义。</p></div>
+<details class="loader"><summary>导入自己的漫画</summary><p class="note">选择一份 .mokuro 识别文件，再一次选中整卷图片或其中几页。保留图片原文件名，即可按书中顺序翻页。下次重选同一卷及图片可恢复学习记录。</p><div class="loadfiles"><label>识别结果<input id="mok-file" type="file" accept=".mokuro,.json"></label><label>漫画原图（可多选）<input id="img-file" type="file" multiple accept=".png,.jpg,.jpeg,.webp,.gif"></label><button id="load-page">打开漫画</button><button id="sample-page" hidden>返回内置样章</button></div><p class="note" id="load-status" role="status"></p></details>
+<div class="booknav" id="page-nav" hidden aria-label="漫画翻页"><button id="prev-page">上一页</button><span class="meta" id="page-number" aria-live="polite"></span><button id="next-page">下一页</button></div>
+<div class="layout"><div class="paper"><div class="picture" id="picture"><img id="page-image" src="data:image/png;base64,${sample_image}" width="${sample_width}" height="${sample_height}" alt="日语车站问路样章，两位乘客就前往新宿及换乘进行对话。"></div><p class="legend" id="legend">绿色框为可点选的对白，橙色框为当前句。也可以用右侧的前后按钮切换。</p></div>
+<aside class="card" aria-label="当前对白"><p id="empty-page" hidden>本页没有可点读的对白，可以浏览原图。</p><div id="sentence-tools"><div class="toprow"><span class="meta" id="position"></span><div class="step"><button id="prev" aria-label="上一句">‹</button><button id="next" aria-label="下一句">›</button></div></div>
+<p class="jp" id="line" lang="ja"></p><div class="actions"><button id="show" class="primary" aria-expanded="false" aria-controls="meaning">查看释义</button><button id="save" class="soft">收藏整句</button></div>
+<p class="meaning" id="meaning" hidden></p>
+<details id="gloss-edit" hidden><summary>填写我的释义</summary><label for="gloss" class="meta">中文释义</label><textarea class="field" id="gloss" rows="2"></textarea><div class="act"><button id="save-gloss">保存释义</button></div></details>
+<details id="words"><summary>收藏句中的词</summary><p class="note"><label for="word">输入或粘贴当前对白中的词语，复习时保留整句。</label></p><input class="field" id="word" lang="ja" autocomplete="off"><div class="act"><button id="save-word">收藏词语</button></div></details>
+<details id="correction"><summary>校正识别文字</summary><p class="note">原始 OCR：<span id="raw" lang="ja"></span></p><label class="meta" for="edit">我的校正</label><textarea class="field" id="edit" rows="2" lang="ja"></textarea><div class="actions act"><button id="apply">保存校正</button><button id="reset">恢复原始识别</button></div></details>
+</div><p id="status" role="status"></p></aside></div>
+<p class="foot" id="footnote">本页内嵌预先提取的 OCR 文字与位置，中文释义按样章原句编写。收藏、校正和复习状态保存在当前浏览器。</p><p class="foot" style="margin-top:4px">样章使用 Apple Vision 预识别，支持导入 <a href="https://github.com/kha-white/mokuro" target="_blank" rel="noopener noreferrer" style="color:var(--green)">mokuro 标注</a>。</p></section>
+<section id="review" hidden><div class="intro"><h2>复习本</h2><p class="sub" id="review-info"></p></div><div id="cards" class="save-list"></div></section>
+</main><script type="application/json" id="sample">${sample_lines}</script>
+<script>
+${reader_js}</script></body></html>
