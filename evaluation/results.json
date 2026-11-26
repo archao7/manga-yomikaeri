@@ -1,0 +1,225 @@
+{
+  "fixture": "Original script and font (32 px) repeated across six synthetic pages. One dialogue per panel, 4 per page. Same artwork and placement, varying text and bubble width.",
+  "metric": "Exact sentence including punctuation, up to one hit per reference per page",
+  "strategies": {
+    "A": "Apple Vision on 400x245, LANCZOS",
+    "B": "Apple Vision on 1600x980 original; normalized boxes for frontend display"
+  },
+  "engine_sha256": "0dc218677ad52f4dd517a77decd8741767e7987bff60af7a9dfaa995b1d0d0a1",
+  "reference_count": 24,
+  "summary": {
+    "A": 22,
+    "B": 24
+  },
+  "pages": [
+    {
+      "page": 1,
+      "scenario": "车站问路",
+      "reference": [
+        "すみません。",
+        "この電車は新宿に行きますか？",
+        "次の駅で乗り換えてください。",
+        "わかりました。ありがとうございます。"
+      ],
+      "A": {
+        "recognized": [
+          "すみません。",
+          "次の駅で乗り換えてください。",
+          "わかりました。ありがとうございます。"
+        ],
+        "matched": 3,
+        "missing": [
+          "この電車は新宿に行きますか？"
+        ],
+        "extraneous": [],
+        "info": ""
+      },
+      "B": {
+        "recognized": [
+          "すみません。",
+          "この電車は新宿に行きますか？",
+          "次の駅で乗り換えてください。",
+          "わかりました。ありがとうございます。"
+        ],
+        "matched": 4,
+        "missing": [],
+        "extraneous": [],
+        "info": ""
+      }
+    },
+    {
+      "page": 2,
+      "scenario": "购买车票",
+      "reference": [
+        "切符を買いたいです。",
+        "どこまで行きますか？",
+        "横浜まで一枚お願いします。",
+        "こちらが切符です。"
+      ],
+      "A": {
+        "recognized": [
+          "切符を買いたいです。",
+          "どこまで行きますか？",
+          "横浜まで一枚お願いします。",
+          "こちらが切符です。"
+        ],
+        "matched": 4,
+        "missing": [],
+        "extraneous": [],
+        "info": ""
+      },
+      "B": {
+        "recognized": [
+          "切符を買いたいです。",
+          "どこまで行きますか？",
+          "横浜まで一枚お願いします。",
+          "こちらが切符です。"
+        ],
+        "matched": 4,
+        "missing": [],
+        "extraneous": [],
+        "info": ""
+      }
+    },
+    {
+      "page": 3,
+      "scenario": "确认班次",
+      "reference": [
+        "次の電車は何時ですか？",
+        "九時十五分に出発します。",
+        "あと十分ありますね。",
+        "はい、まだ間に合います。"
+      ],
+      "A": {
+        "recognized": [
+          "次の電車は何時ですか？",
+          "九時十五分に出発します。",
+          "あと十分ありますね。",
+          "はい、まだ問に合います。"
+        ],
+        "matched": 3,
+        "missing": [
+          "はい、まだ間に合います。"
+        ],
+        "extraneous": [
+          "はい、まだ問に合います。"
+        ],
+        "info": ""
+      },
+      "B": {
+        "recognized": [
+          "次の電車は何時ですか？",
+          "九時十五分に出発します。",
+          "あと十分ありますね。",
+          "はい、まだ間に合います。"
+        ],
+        "matched": 4,
+        "missing": [],
+        "extraneous": [],
+        "info": ""
+      }
+    },
+    {
+      "page": 4,
+      "scenario": "找洗手间",
+      "reference": [
+        "トイレはどこですか？",
+        "あの階段の右側です。",
+        "改札の外にありますか？",
+        "いいえ、中にあります。"
+      ],
+      "A": {
+        "recognized": [
+          "トイレはどこですか？",
+          "あの階段の右側です。",
+          "改札の外にありますか？",
+          "いいえ、中にあります。"
+        ],
+        "matched": 4,
+        "missing": [],
+        "extraneous": [],
+        "info": ""
+      },
+      "B": {
+        "recognized": [
+          "トイレはどこですか？",
+          "あの階段の右側です。",
+          "改札の外にありますか？",
+          "いいえ、中にあります。"
+        ],
+        "matched": 4,
+        "missing": [],
+        "extraneous": [],
+        "info": ""
+      }
+    },
+    {
+      "page": 5,
+      "scenario": "与朋友碰面",
+      "reference": [
+        "待ち合わせは西口ですか？",
+        "東口の時計の前ですよ。",
+        "もう着いていますか？",
+        "いま階段を下りています。"
+      ],
+      "A": {
+        "recognized": [
+          "待ち合わせは西口ですか？",
+          "東口の時計の前ですよ。",
+          "もう着いていますか？",
+          "いま階段を下りています。"
+        ],
+        "matched": 4,
+        "missing": [],
+        "extraneous": [],
+        "info": ""
+      },
+      "B": {
+        "recognized": [
+          "待ち合わせは西口ですか？",
+          "東口の時計の前ですよ。",
+          "もう着いていますか？",
+          "いま階段を下りています。"
+        ],
+        "matched": 4,
+        "missing": [],
+        "extraneous": [],
+        "info": ""
+      }
+    },
+    {
+      "page": 6,
+      "scenario": "询问失物",
+      "reference": [
+        "かばんを忘れました。",
+        "どんな色ですか？",
+        "小さな青いかばんです。",
+        "窓口で確認しましょう。"
+      ],
+      "A": {
+        "recognized": [
+          "かばんを忘れました。",
+          "どんな色ですか？",
+          "小さな青いかばんです。",
+          "窓口で確認しましょう。"
+        ],
+        "matched": 4,
+        "missing": [],
+        "extraneous": [],
+        "info": ""
+      },
+      "B": {
+        "recognized": [
+          "かばんを忘れました。",
+          "どんな色ですか？",
+          "小さな青いかばんです。",
+          "窓口で確認しましょう。"
+        ],
+        "matched": 4,
+        "missing": [],
+        "extraneous": [],
+        "info": ""
+      }
+    }
+  ]
+}
