@@ -1,0 +1,116 @@
+{
+  "pages" : [
+    {
+      "blocks" : [
+        {
+          "box" : [
+            78,
+            23,
+            122,
+            32
+          ],
+          "font_size" : 9,
+          "lines" : [
+            "すみません。"
+          ],
+          "lines_coords" : [
+            [
+              [
+                78,
+                23
+              ],
+              [
+                122,
+                23
+              ],
+              [
+                122,
+                32
+              ],
+              [
+                78,
+                32
+              ]
+            ]
+          ],
+          "vertical" : false
+        },
+        {
+          "box" : [
+            44,
+            139,
+            157,
+            150
+          ],
+          "font_size" : 11,
+          "lines" : [
+            "次の駅で乗り換えてください。"
+          ],
+          "lines_coords" : [
+            [
+              [
+                44,
+                139
+              ],
+              [
+                157,
+                139
+              ],
+              [
+                157,
+                150
+              ],
+              [
+                44,
+                150
+              ]
+            ]
+          ],
+          "vertical" : false
+        },
+        {
+          "box" : [
+            224,
+            139,
+            367,
+            150
+          ],
+          "font_size" : 11,
+          "lines" : [
+            "わかりました。ありがとうございます。"
+          ],
+          "lines_coords" : [
+            [
+              [
+                224,
+                139
+              ],
+              [
+                367,
+                139
+              ],
+              [
+                367,
+                150
+              ],
+              [
+                224,
+                150
+              ]
+            ]
+          ],
+          "vertical" : false
+        }
+      ],
+      "img_height" : 245,
+      "img_path" : "preview.png",
+      "img_width" : 400,
+      "version" : "0.2.0"
+    }
+  ],
+  "title" : "preview",
+  "title_uuid" : "b8034947-13e1-4009-8ee9-d3f91ff3e4a1",
+  "version" : "0.2.0",
+  "volume" : "preview",
+  "volume_uuid" : "841f786c-98bc-4328-a5c8-df1addbcc72b"
+}
